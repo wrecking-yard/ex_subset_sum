@@ -1,6 +1,12 @@
 # ExSubsetSum
 
-**TODO: Add description**
+based on https://panduwana.wordpress.com/2010/04/21/combination-in-erlang/
+
+## Description
+
+See [here](https://elixirforum.com/t/sum-of-subsets/50511/33)
+
+## Example
 
 ```elixir
 iex> ExSubsetSum.sum_of_one(Enum.to_list(1..10), 10)
