@@ -28,14 +28,6 @@ defmodule ExSubsetSum do
     )
   end
 
-  def c(list) do
-    List.foldl(
-      Enum.to_list(1..length(list)),
-      [],
-      fn length, acc -> acc ++ _combinations(list, length) end
-    )
-  end
-
   defp _combinations(list, 1), do: for(e <- list, do: [e])
 
   defp _combinations(list, length) when length(list) == length, do: [list]
