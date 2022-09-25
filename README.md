@@ -2,20 +2,32 @@
 
 **TODO: Add description**
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ex_subset_sum` to your list of dependencies in `mix.exs`:
-
 ```elixir
-def deps do
-  [
-    {:ex_subset_sum, "~> 0.1.0"}
-  ]
-end
+iex> ExSubsetSum.sum_of_one(Enum.to_list(1..10), 10)
+[
+  [10],
+  [1, 9],
+  [2, 8],
+  [3, 7],
+  [4, 6],
+  [1, 2, 7],
+  [1, 3, 6],
+  [1, 4, 5],
+  [2, 3, 5],
+  [1, 2, 3, 4]
+]
+
+iex> ExSubsetSum.sum_of_all(Enum.to_list(1..10), [1, 4, 5])
+[
+  [10],
+  [1, 9],
+  [2, 8],
+  [3, 7],
+  [4, 6],
+  [1, 2, 7],
+  [1, 3, 6],
+  [1, 4, 5],
+  [2, 3, 5],
+  [1, 2, 3, 4]
+]
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ex_subset_sum](https://hexdocs.pm/ex_subset_sum).
-
