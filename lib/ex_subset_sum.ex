@@ -1,4 +1,4 @@
-defmodule SubsetSum do
+defmodule ExSubsetSum do
   # see https://panduwana.wordpress.com/2010/04/21/combination-in-erlang/
 
   def valid_sum([]), do: []
